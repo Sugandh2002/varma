@@ -3,102 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BookMyMovie</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Marketing Agency</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header>
     <div class="container">
-      <h1>BookMyMovie</h1>
+      <h1>BrightSpark Marketing</h1>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Movies</a>
-        <a href="#">Contact</a>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <h2>Book Tickets for the Latest Movies</h2>
-      <p>No JavaScript. Just Pure HTML & CSS.</p>
+      <h2>Grow Your Business with Confidence</h2>
+      <p>We craft data-driven strategies to boost your brand visibility and revenue.</p>
+      <a href="#contact" class="btn">Get Started</a>
     </div>
   </section>
 
-  <section class="movies container">
-    <h2>Now Showing</h2>
-    <div class="movie-grid">
-      <div class="movie-card">
-        <img src="https://via.placeholder.com/200x300" alt="Movie 1">
-        <h3>Movie Title 1</h3>
-        <p>Action | 2h 10m</p>
-        <a href="#book1" class="book-btn">Book Now</a>
-      </div>
-
-      <div class="movie-card">
-        <img src="https://via.placeholder.com/200x300" alt="Movie 2">
-        <h3>Movie Title 2</h3>
-        <p>Drama | 1h 45m</p>
-        <a href="#book2" class="book-btn">Book Now</a>
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-boxes">
+        <div class="service">
+          <h3>Digital Marketing</h3>
+          <p>SEO, PPC, and email campaigns to drive traffic and conversions.</p>
+        </div>
+        <div class="service">
+          <h3>Social Media Management</h3>
+          <p>Engaging content and strategic posting to build your audience.</p>
+        </div>
+        <div class="service">
+          <h3>Brand Strategy</h3>
+          <p>Positioning your brand for long-term success and loyalty.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Booking Form 1 -->
-  <div id="book1" class="overlay">
-    <div class="form-popup">
-      <a href="#" class="close">&times;</a>
-      <h2>Book Ticket - Movie Title 1</h2>
-      <form>
-        <label>Your Name</label>
-        <input type="text" required>
-
-        <label>Number of Tickets</label>
-        <input type="number" min="1" max="10" required>
-
-        <label>Show Time</label>
-        <select required>
-          <option value="">Select</option>
-          <option>10:00 AM</option>
-          <option>1:00 PM</option>
-          <option>4:00 PM</option>
-          <option>7:00 PM</option>
-        </select>
-
-        <button type="submit">Confirm Booking</button>
-      </form>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At BrightSpark, we’re passionate marketers, creative thinkers, and data lovers. We help businesses of all sizes navigate the digital world and stand out from the competition.</p>
     </div>
-  </div>
+  </section>
 
-  <!-- Booking Form 2 -->
-  <div id="book2" class="overlay">
-    <div class="form-popup">
-      <a href="#" class="close">&times;</a>
-      <h2>Book Ticket - Movie Title 2</h2>
-      <form>
-        <label>Your Name</label>
-        <input type="text" required>
-
-        <label>Number of Tickets</label>
-        <input type="number" min="1" max="10" required>
-
-        <label>Show Time</label>
-        <select required>
-          <option value="">Select</option>
-          <option>10:00 AM</option>
-          <option>1:00 PM</option>
-          <option>4:00 PM</option>
-          <option>7:00 PM</option>
-        </select>
-
-        <button type="submit">Confirm Booking</button>
-      </form>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email us at <a href="mailto:hello@brightspark.com">hello@brightspark.com</a></p>
+      <p>Or call us at (123) 456-7890</p>
     </div>
-  </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 BookMyMovie. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 BrightSpark Marketing. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
