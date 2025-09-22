@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookMyMovie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>BookMyMovie</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Book Tickets for the Latest Movies</h2>
+      <p>No JavaScript. Just Pure HTML & CSS.</p>
+    </div>
+  </section>
+
+  <section class="movies container">
+    <h2>Now Showing</h2>
+    <div class="movie-grid">
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300" alt="Movie 1">
+        <h3>Movie Title 1</h3>
+        <p>Action | 2h 10m</p>
+        <a href="#book1" class="book-btn">Book Now</a>
+      </div>
+
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/200x300" alt="Movie 2">
+        <h3>Movie Title 2</h3>
+        <p>Drama | 1h 45m</p>
+        <a href="#book2" class="book-btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form 1 -->
+  <div id="book1" class="overlay">
+    <div class="form-popup">
+      <a href="#" class="close">&times;</a>
+      <h2>Book Ticket - Movie Title 1</h2>
+      <form>
+        <label>Your Name</label>
+        <input type="text" required>
+
+        <label>Number of Tickets</label>
+        <input type="number" min="1" max="10" required>
+
+        <label>Show Time</label>
+        <select required>
+          <option value="">Select</option>
+          <option>10:00 AM</option>
+          <option>1:00 PM</option>
+          <option>4:00 PM</option>
+          <option>7:00 PM</option>
+        </select>
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Booking Form 2 -->
+  <div id="book2" class="overlay">
+    <div class="form-popup">
+      <a href="#" class="close">&times;</a>
+      <h2>Book Ticket - Movie Title 2</h2>
+      <form>
+        <label>Your Name</label>
+        <input type="text" required>
+
+        <label>Number of Tickets</label>
+        <input type="number" min="1" max="10" required>
+
+        <label>Show Time</label>
+        <select required>
+          <option value="">Select</option>
+          <option>10:00 AM</option>
+          <option>1:00 PM</option>
+          <option>4:00 PM</option>
+          <option>7:00 PM</option>
+        </select>
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 BookMyMovie. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
